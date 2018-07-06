@@ -39,6 +39,28 @@
   url("../fonts/gilroyextrabold.ttf") format("ttf");
 }
 
+/* Анимация для формы, при ошибке */
+@keyframes shakeForm {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0); }
+  5% {
+    -webkit-transform: translate3d(-51%, -50%, 0);
+            transform: translate3d(-51%, -50%, 0); }
+  10% {
+    -webkit-transform: translate3d(-49%, -50%, 0);
+            transform: translate3d(-49%, -50%, 0); }
+  15% {
+    -webkit-transform: translate3d(-51%, -50%, 0);
+            transform: translate3d(-51%, -50%, 0); }
+  20% {
+    -webkit-transform: translate3d(-49%, -50%, 0);
+            transform: translate3d(-49%, -50%, 0); }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0); }
+}
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -453,6 +475,7 @@ a.logout-link  {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
   color: #000000;
   background-color: transparent;
   border: none;
@@ -485,17 +508,17 @@ a.logout-link  {
 }
 
 .slider-item .button-link {
-  width: 220px;
+  min-width: 220px;
   margin-bottom: 40px;
 }
 
 .service-item .button-link {
-  width: 160px;
+  min-width: 160px;
 }
 
 .about-us .button-link,
 .contacts .button-link {
-  width: 260px;
+  min-width: 260px;
 }
 
 .slider {
@@ -514,11 +537,6 @@ a.logout-link  {
       -ms-flex-pack: justify;
           justify-content: space-between;
   opacity: 0;
-  -webkit-transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
-  transition: opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
-  -o-transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
-  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
-  transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
 }
 
 #slide1:checked ~ .slider > .slider-item-01,
@@ -547,6 +565,7 @@ a.logout-link  {
   height: 3px;
   margin: 0;
   padding: 0;
+  vertical-align: middle;
   border: 1px solid transparent;
   border-radius: 50%;
   -webkit-transition: background ease-in-out 0.5s;
@@ -558,7 +577,7 @@ a.logout-link  {
   margin-left: 20px;
 }
 
-.slides label:hover, 
+.slides label:hover,
 #slide1:checked ~ .slider .slider-controls label:nth-of-type(1),
 #slide2:checked ~ .slider .slider-controls label:nth-of-type(2),
 #slide3:checked ~ .slider .slider-controls label:nth-of-type(3) {
@@ -1358,7 +1377,7 @@ a.footer-logout-link  {
 }*/
 
 .feedback .button-link {
-  width: 200px;
+  min-width: 200px;
 }
 
 .close {
@@ -1592,6 +1611,7 @@ a.footer-logout-link  {
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .range::before {
@@ -1729,7 +1749,7 @@ input[type="radio"]:checked + .fake-radio::before {
 }
 
 .filter-form .button-link {
-  width: 200px;
+  min-width: 200px;
 }
 
 .showcase .column-2 {
@@ -1807,7 +1827,7 @@ input[type="radio"]:checked + .fake-radio::before {
 }
 
 .product-add .button-link {
-  width: 200px;
+  min-width: 200px;
 }
 
 a.button-add-cart {
@@ -1836,6 +1856,33 @@ a.button-add-cart:active {
           align-items: flex-start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.product-new::before {
+  content: "NEW";
+  position: absolute;
+  top: 45px;
+  right: 38px;
+  font-family: "Gilroy Extrabold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.product-new::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: block;
+  width: 58px;
+  height: 58px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.1;
 }
 
 .goods-name {
@@ -1909,4 +1956,31 @@ a.button-add-cart:active {
 
 .pages-list a:active {
   color: rgba(0, 0, 0, 1);
+}
+
+.feedback-page {
+  margin-bottom: 35px;
+}
+
+.feedback-page .feedback-title {
+  font-family: "Gilroy Extrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.feedback-page .form-line-1 {
+  flex-direction: column;
+}
+
+.feedback-page .form-name {
+  margin-bottom: 35px;
+}
+
+.validate-form {
+  animation-name: shakeForm;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }

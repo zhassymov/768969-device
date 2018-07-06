@@ -12,7 +12,7 @@
       <div class="container">
         <div class="main-header">
           
-          <a href="#" class="logo">DEVICE</a>
+          <span class="logo">DEVICE</span>
           <div class="user-menu">
             <form class="search-form">
               <input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
@@ -33,7 +33,7 @@
                 <div class="catalog">
                   <ul class="catalog-list column-1">
                     <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="/catalog.html">Моноподы для селфи</a></li>
+                    <li><a href="catalog.html">Моноподы для селфи</a></li>
                     <li><a href="#">Экшн-камеры</a></li>
                   </ul>
                   <ul class="catalog-list column-2">
@@ -70,7 +70,7 @@
             <!-- Слайд №01 -->
             <div class="slider-item slider-item-01">
               <div class="slider-image">
-                <img src="img/slider-1.png" alt="Монопод для селфи">
+                <img src="img/slider-1.png" alt="Монопод для селфи" width="384" height="486">
               </div>
               <div class="slider-description">
                 <span class="slider-numeration">01</span>
@@ -95,7 +95,7 @@
             <!-- Слайд №02 -->
             <div class="slider-item slider-item-02">
               <div class="slider-image">
-                <img src="img/slider-2.png" alt="Фитнес-браслет">
+                <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
               </div>
               <div class="slider-description">
                 <span class="slider-numeration">02</span>
@@ -116,7 +116,7 @@
             <!-- Слайд №03 -->
             <div class="slider-item slider-item-03">
               <div class="slider-image">
-                <img src="img/slider-3.png" alt="Квадрокоптер">
+                <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
               </div>
               <div class="slider-description">
                 <span class="slider-numeration">03</span>
@@ -137,9 +137,9 @@
             </div>
 
             <div class="slider-controls">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
+              <label for="slide1" tabindex="0"></label>
+              <label for="slide2" tabindex="0"></label>
+              <label for="slide3" tabindex="0"></label>
             </div>
           
           </div>
@@ -151,7 +151,7 @@
         <div class="container">
           <ul class="category-list">
             <li class="category-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="category-item"><a href="#">Моноподы для селфи</a></li>
+            <li class="category-item"><a href="catalog.html">Моноподы для селфи</a></li>
             <li class="category-item"><a href="#">Экшн-камеры</a></li>
             <li class="category-item"><a href="#">Фитнес-браслеты</a></li>
             <li class="category-item"><a href="#">Умные часы</a></li>
@@ -173,13 +173,13 @@
 
             <ul class="service-list">
               <li class="service-item service-delivery" id="service-delivery">
-                <label class="button-link" for="serv1">Доставка</label>
+                <label class="button-link" for="serv1" tabindex="0">Доставка</label>
               </li>
               <li class="service-item service-warranty" id="service-warranty">
-                <label class="button-link" for="serv2">Гарантия</label>
+                <label class="button-link" for="serv2" tabindex="0">Гарантия</label>
               </li>
               <li class="service-item service-credit" id="service-credit">
-                <label class="button-link" for="serv3">Кредит</label>
+                <label class="button-link" for="serv3" tabindex="0">Кредит</label>
               </li>
             </ul>
 
@@ -209,22 +209,22 @@
           <ul class="brands-list">
             <li class="brands-item">
               <a href="#" class="brands-link brand-1">
-                <img class="brands-color" src="img/brand-1.png" alt="DJI" width="260px" height="100px">
+                <img class="brands-color" src="img/brand-1.png" alt="DJI" width="260" height="100">
               </a>
             </li>
             <li class="brands-item">
               <a href="#" class="brands-link brand-2">
-                <img class="brands-color" src="img/brand-2.png" alt="SP Gadgets" width="260px" height="100px">
+                <img class="brands-color" src="img/brand-2.png" alt="SP Gadgets" width="260" height="100">
               </a>
             </li>
             <li class="brands-item">
               <a href="#" class="brands-link brand-3">
-                <img class="brands-color" src="img/brand-3.png" alt="GoPro" width="260px" height="100px">
+                <img class="brands-color" src="img/brand-3.png" alt="GoPro" width="260" height="100">
               </a>
             </li>
             <li class="brands-item">
               <a href="#" class="brands-link brand-4">
-                <img class="brands-color" src="img/brand-4.png" alt="VIVE" width="260px" height="100px">
+                <img class="brands-color" src="img/brand-4.png" alt="VIVE" width="260" height="100">
               </a>
             </li>
           </ul>
@@ -247,8 +247,8 @@
           <section class="contacts">
             <h2 class="section-header">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>      
-            <a class="map" href="#"><img src="img/map.jpg" width="560" height="222" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15"></a>
-            <a class="button-link" href="#">Напишите нам</a>
+            <a class="map open-map" href="https://goo.gl/maps/9LD5q8ECirt"><img src="img/map.jpg" width="560" height="222" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15"></a>
+            <a class="button-link button-submit" href="form.html">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -295,32 +295,32 @@
     </div>
 
     <div class="map-popup">
-      <img src="img/map-big.jpg" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15">
-      <button class="close">Закрыть</button>
+      <img src="img/map-big.jpg" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15" width="960" height="559">
+      <button class="close button-close-map">Закрыть</button>
     </div>
 
-    <div class="write-us">
+    <div class="write-us form-popup">
         <form class="feedback" action="#">
           <div class="form-line-1">
             <div class="form-name">
               <label for="name">Ваше имя:</label>
-              <input class="feedback-input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+              <input class="feedback-input input-field" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
             </div>
             <div class="form-email">
               <label for="email">Ваш e-mail:</label>
-              <input class="feedback-input" type="email" name="email" id="email" placeholder="email@example.com" required>
+              <input class="feedback-input input-field" type="email" name="email" id="email" placeholder="email@example.com" required>
             </div>
           </div>
 
           <div class="form-line-2">
             <label for="message">Текст письма:</label>
-            <textarea class="feedback-input feedback-textarea" name="message" id="message" placeholder="В свободной форме"></textarea>
+            <textarea class="feedback-input feedback-textarea input-field" name="message" id="message" placeholder="В свободной форме"></textarea>
           </div>
 
-          <button class="button-link">Отправить</button>
+          <button class="button-link button-submit-form">Отправить</button>
         </form>
-        <button class="close">Закрыть</button>
-      </div>
-
+        <button class="close button-close-form">Закрыть</button>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
