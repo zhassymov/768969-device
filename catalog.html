@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Девайс - Моноподы для селфи</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -13,9 +13,9 @@
           
           <a href="index.html" class="logo">DEVICE</a>
           <div class="user-menu">
-            <form class="search-form">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET" name="search-form">
               <input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <button class="search-btn">Найти</button>
+              <button class="search-btn" type="submit">Найти</button>
             </form>
             <ul class="login">
               <li><a href="#" class="profile-link">Валентин Петухов</a></li>
@@ -29,7 +29,7 @@
           
           <nav class="main-menu">
             <ul class="menu-item">
-              <li><a class="catalog-dropdown" href="#">Каталог товаров</a>
+              <li><a href="#" class="catalog-dropdown" >Каталог товаров</a>
                 <div class="catalog">
                   <ul class="catalog-list column-1">
                     <li><a href="#">Виртуальная реальность</a></li>
@@ -59,7 +59,7 @@
       <div class="container">
         <h1 class="section-header directory">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
-          <li><a href="#">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог товаров</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
         </ul>
@@ -85,7 +85,7 @@
           <div class="container">
             
             <div class="column-1">
-              <form class="filter-form">
+              <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST" name="catalog-form">
                 <fieldset class="filter-fieldset">
                   <legend>Стоимость</legend>
                   <!-- Здесь будет ползунок выбора диапазона цен -->
@@ -127,7 +127,7 @@
                     </div>
                   </div>
                   <div class="product-label">
-                    <a class="goods-name" href="#">Любительская селфи-палка</a>
+                    <a href="#" class="goods-name" >Любительская селфи-палка</a>
                     <span class="goods-price">300 руб.</span>
                   </div>
                 </li>
@@ -140,7 +140,7 @@
                     </div>
                   </div>
                   <div class="product-label">
-                    <a class="goods-name" href="#">Профессиональная селфи-палка</a>
+                    <a href="#" class="goods-name" >Профессиональная<br> селфи-палка</a>
                     <span class="goods-price">500 руб.</span>
                   </div>
                 </li>
@@ -153,7 +153,7 @@
                     </div>
                   </div>
                   <div class="product-label">
-                    <a class="goods-name" href="#">Непотопляемая селфи-палка</a>
+                    <a href="#" class="goods-name" >Непотопляемая селфи-палка</a>
                     <span class="goods-price">1500 руб.</span>
                   </div>
                 </li>
@@ -164,22 +164,23 @@
                       <a href="#" class="button-link">В корзину</a>
                       <a href="#" class="button-add-cart">Добавить к сравнению</a>
                     </div>
+                    <div class="product-new-item">new</div>
                   </div>
                   <div class="product-label product-new">
-                    <a class="goods-name" href="#">Селфи-палка «Следуй за мной»</a>
+                    <a href="#" class="goods-name" >Селфи-палка «Следуй за мной»</a>
                     <span class="goods-price">4900 руб.</span>
                   </div>
                 </li>
               </ul>
               
               <div class="catalog-nav">
-                <a href="#" class="catalog-back controls">Назад</a>
+                <a  class="catalog-back controls">Назад</a>
                 <ol class="pages-list">
-                  <li><a href="#" class="page controls">1</a></li>
+                  <li><a href="#" class="page controls active">1</a></li>
                   <li><a href="#" class="page controls">2</a></li>
                   <li><a href="#" class="page controls">3</a></li>
                 </ol>
-                <a href="#" class="catalog-forward controls">Вперед</a>
+                <a class="catalog-forward controls">Вперед</a>
               </div>
 
             </div>
@@ -192,7 +193,7 @@
       <div class="container">
         
         <div class="footer-line-1">
-          <a href="#" class="footer-logo">DEVICE</a>
+          <a href="index.html" class="footer-logo">DEVICE</a>
           <ul class="footer-login">
             <li><a href="#" class="footer-profile-link">Валентин Петухов</a></li>
             <li><a href="#" class="footer-logout-link">Выйти</a></li>
@@ -224,6 +225,6 @@
 
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Девайс - Интернет-магазин гаджетов</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>    
     
@@ -14,9 +14,9 @@
           
           <span class="logo">DEVICE</span>
           <div class="user-menu">
-            <form class="search-form">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET" name="search-form">
               <input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <button class="search-btn">Найти</button>
+              <button class="search-btn" type="submit">Найти</button>
             </form>
             <ul class="login">
               <li><a href="#" class="login-link">Войти</a></li>
@@ -151,7 +151,7 @@
         <div class="container">
           <ul class="category-list">
             <li class="category-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="category-item"><a href="catalog.html">Моноподы для селфи</a></li>
+            <li class="category-item"><a href="catalog.html">Моноподы<br> для селфи</a></li>
             <li class="category-item"><a href="#">Экшн-камеры</a></li>
             <li class="category-item"><a href="#">Фитнес-браслеты</a></li>
             <li class="category-item"><a href="#">Умные часы</a></li>
@@ -247,7 +247,12 @@
           <section class="contacts">
             <h2 class="section-header">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>      
-            <a class="map open-map" href="https://goo.gl/maps/9LD5q8ECirt"><img src="img/map.jpg" width="560" height="222" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15"></a>
+            <a class="map open-map" href="https://goo.gl/maps/9LD5q8ECirt">
+              <img src="img/map.jpg" width="560" height="222" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15">
+              <div class="contacts-map">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05c488a8c148d8d2b87c3c3073a7dab768b42dd99d7f3741285ceef609758fcb&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+              </div>
+            </a>
             <a class="button-link button-submit" href="form.html">Напишите нам</a>
           </section>
         </div>
@@ -296,11 +301,14 @@
 
     <div class="map-popup">
       <img src="img/map-big.jpg" alt="Офис компании расположен по адресу: город Москва, улица Строителей, дом 15" width="960" height="559">
-      <button class="close button-close-map">Закрыть</button>
+      <div class="map-wrap">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05c488a8c148d8d2b87c3c3073a7dab768b42dd99d7f3741285ceef609758fcb&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <button class="close button-close-map" type="button">Закрыть</button>
     </div>
 
     <div class="write-us form-popup">
-        <form class="feedback" action="#">
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="POST" name="feedback-form">
           <div class="form-line-1">
             <div class="form-name">
               <label for="name">Ваше имя:</label>
@@ -317,10 +325,10 @@
             <textarea class="feedback-input feedback-textarea input-field" name="message" id="message" placeholder="В свободной форме"></textarea>
           </div>
 
-          <button class="button-link button-submit-form">Отправить</button>
+          <button class="button-link button-submit-form" type="submit">Отправить</button>
         </form>
-        <button class="close button-close-form">Закрыть</button>
+        <button class="close button-close-form" type="button">Закрыть</button>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Девайс - Интернет-магазин гаджетов</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>    
     
@@ -12,18 +12,18 @@
       <div class="container">
         <div class="main-header">
           
-          <a href="#" class="logo">DEVICE</a>
+          <a href="index.html" class="logo">DEVICE</a>
           <div class="user-menu">
-            <form class="search-form">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET" name="search-form"> 
               <input class="search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-              <button class="search-btn">Найти</button>
+              <button class="search-btn" type="submit">Найти</button>
             </form>
             <ul class="login">
-              <li><a href="#" class="login-link">Войти</a></li>
+              <li><a class="login-link">Войти</a></li>
             </ul>
             <ul class="functions">
-              <li><a href="#" class="compare">Сравнить</a></li>
-              <li><a href="#" class="cart">Корзина</a></li>
+              <li><a class="compare">Сравнить</a></li>
+              <li><a class="cart">Корзина</a></li>
             </ul>
           </div>
           
@@ -32,22 +32,22 @@
               <li><a class="catalog-dropdown" href="#">Каталог товаров</a>
                 <div class="catalog">
                   <ul class="catalog-list column-1">
-                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a>Виртуальная реальность</a></li>
                     <li><a href="/catalog.html">Моноподы для селфи</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
+                    <li><a>Экшн-камеры</a></li>
                   </ul>
                   <ul class="catalog-list column-2">
-                    <li><a href="#">Фитнес-браслеты</a></li>
-                    <li><a href="#">Умные часы</a></li>
+                    <li><a>Фитнес-браслеты</a></li>
+                    <li><a>Умные часы</a></li>
                   </ul>
                   <ul class="catalog-list column-3">
-                    <li><a href="#">Квадрокоптеры</a></li>
+                    <li><a>Квадрокоптеры</a></li>
                   </ul>
                 </div>
               </li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a>Доставка</a></li>
+              <li><a>Гарантия</a></li>
+              <li><a>Контакты</a></li>
             </ul>
           </nav>
         
@@ -60,7 +60,7 @@
       <section class="section feedback-page">
         <div class="container">
           <h2 class="feedback-title">Напишите нам</h2>
-          <form class="feedback" action="#">
+          <form class="feedback" action="https://echo.htmlacademy.ru" method="POST" name="feedback-form">
             <div class="form-line-1">
               <div class="form-name">
                 <label for="name">Ваше имя:</label>
@@ -87,31 +87,31 @@
       <div class="container">
         
         <div class="footer-line-1">
-          <a href="#" class="footer-logo">DEVICE</a>
+          <a href="index.html" class="footer-logo">DEVICE</a>
           <ul class="footer-login">
-            <li><a href="#" class="footer-login-link">Войти</a></li>
+            <li><a class="footer-login-link">Войти</a></li>
           </ul>
           <ul class="footer-functions">
-            <li><a href="#" class="footer-compare">Сравнить</a></li>
-            <li><a href="#" class="footer-cart">Корзина</a></li>
+            <li><a class="footer-compare">Сравнить</a></li>
+            <li><a class="footer-cart">Корзина</a></li>
           </ul>
         </div>
 
         <div class="footer-line-2">
           <p class="address">г. Москва, ул. Строителей, 15</p>
           <ul class="footer-menu">
-            <li class="footer-menu-item"><a href="#">Доставка</a></li>
-            <li class="footer-menu-item"><a href="#">Гарантия</a></li>
-            <li class="footer-menu-item"><a href="#">Контакты</a></li>
+            <li class="footer-menu-item"><a>Доставка</a></li>
+            <li class="footer-menu-item"><a>Гарантия</a></li>
+            <li class="footer-menu-item"><a>Контакты</a></li>
           </ul>
           <p class="phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
         </div>
 
         <div class="footer-line-3">
           <ul class="share">
-            <li class="social social-fb"><a href="#">Facebook</a></li>
-            <li class="social social-insta"><a href="#">Instagram</a></li>
-            <li class="social social-tw"><a href="#">Twitter</a></li>
+            <li class="social social-fb"><a>Facebook</a></li>
+            <li class="social social-insta"><a>Instagram</a></li>
+            <li class="social social-tw"><a>Twitter</a></li>
           </ul>
           <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </div>
@@ -120,6 +120,6 @@
     </footer>
 
    
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
